@@ -236,6 +236,19 @@ input[name="guild"]{
 }
 .printinfo {
 }
+.mococo-bg{
+    position: absolute;
+    top: -23px;
+    right: 115px;
+    width: 100px;
+    height: 100px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-image: url(../img/bg2.png);
+    border-radius: 20px;
+    border: none;
+    display: none;
+}
 .mococo-img{
     position: absolute;
     top: -2px;
@@ -244,7 +257,6 @@ input[name="guild"]{
     height: 50px;
     background-size: auto;
     background-position: center center;
-    /* background-color: #fffffeaf; */
     border-radius: 20px;
     border: none;
 }

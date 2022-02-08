@@ -272,6 +272,8 @@ function printcheckbox() {
     if (sessionStorage.newuser != null) {
         const mococo = document.querySelector(".mococo-img");
         mococo.classList.add("mococo");
+        document.querySelector(".mococo-bg").style.display = "block";
+
     }
     if (sessionStorage.nikname != null) {
         document.querySelector(".printinfo input[name=nikname]").checked = true;
