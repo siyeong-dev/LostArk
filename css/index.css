@@ -166,17 +166,17 @@ input[name="guild"]{
 .by{
     position: absolute;
     bottom: 35px;
-    right: 140px;
+    right: 215px;
     color: whitesmoke;
 }
 .by::after{
     position: absolute;
-    content: "by @_miaring_";
+    content: "avring.tk by @_miaring_";
     color: #000;
     background-color: #f8e9ce91;
     border-radius: 20px;
-    width: 120px;
-    padding-left: 10px;
+    width: 195px;
+    padding-left: 15px;
     padding-bottom: 5px;
     font-weight: bolder;
 }
