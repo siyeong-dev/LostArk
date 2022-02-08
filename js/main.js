@@ -1,5 +1,6 @@
 'use strict';
 
+
 const form = document.querySelector("form");
 const Newuser = document.querySelector("input[name=new]");
 const Nikname = document.querySelector("input[name=nikname]");
