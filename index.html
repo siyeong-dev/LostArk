@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div id="#box">
+        <div class="iner">
+            <div id="title">
+                <div class="logo"></div>
+                <p class="title">로스트아크 시트 생성기</p>
+            </div>
+            <form>
+                <div class="info">
+                    <p>기본 정보</p>
+                    <div>
+                        서버: <select name="server">
+                            <option value="">서버</option>
+                            <option value="루페온">루페온</option>
+                            <option value="실리안">실리안</option>
+                            <option value="아브렐슈드">아브렐슈드</option>
+                            <option value="아만">아만</option>
+                            <option value="카마인">카마인</option>
+                            <option value="카제로스">카제로스</option>
+                            <option value="카단">카단</option>
+                            <option value="니나브">니나브</option>
+                        </select>
+                        직업: <select name="jab">
+                            <option label="직업" </option> <optgroup label="전사">
+                            <option value="워로드">워로드</option>
+                            <option value="버서커">버서커</option>
+                            <option value="디스트로이어">디스트로이어</option>
+                            <option value="홀리나이트">홀리나이트</option>
+                            </optgroup>
+                            <optgroup label="무도가">
+                                <option value="배틀마스터">배틀마스터</option>
+                                <option value="인파이터">인파이터</option>
+                                <option value="기공사">기공사</option>
+                                <option value="창술사">창술사</option>
+                                <option value="스크라이커">스크라이커</option>
+                            </optgroup>
+                            <optgroup label="마법사">
+                                <option value="바드">바드</option>
+                                <option value="아르카나">아르카나</option>
+                                <option value="서머너">서머너</option>
+                                <option value="소서리스">소서리스</option>
+                            </optgroup>
+                            <optgroup label="헌터">
+                                <option value="데빌헌터">데빌헌터</option>
+                                <option value="블래스터">블래스터</option>
+                                <option value="호크아이">호크아이</option>
+                                <option value="스타우터">스타우터</option>
+                                <option value="건슬링거">건슬링거</option>
+                            </optgroup>
+                            <optgroup label="암살자">
+                                <option value="리퍼">리퍼</option>
+                                <option value="데모닉">데모닉</option>
+                                <option value="블레이드">블레이드</option>
+                            </optgroup>
+                            <optgroup label="스페셜리스트">
+                                <option value="도화가">도화가</option>
+                            </optgroup>
+                        </select>
+                        닉네임: <input type="text" name="id">
+                        <div class="name">
+                            <label><input type="checkbox" name="new" id="" value="new">모코코 에요</label>
+                            <label><input type="checkbox" name="nikname" id="" value="nikname">인게임 닉네임이 달라요</label>
+                        </div>
+                    </div>
+                    <div>
+                        레밸: <input type="text" name="level">
+                        길드: <input type="text" name="guild">
+                    </div>
+                </div>
+                <div class="ingame">
+                    <div class="ingame-time">
+                        <p>접속 시간대</p>
+                        <div>
+                            <label><input type="checkbox" name="time" id="" value="">새벽</label>
+                            <label><input type="checkbox" name="time" id="" value="">오전</label>
+                            <label><input type="checkbox" name="time" id="" value="">오후</label>
+                            <label><input type="checkbox" name="time" id="" value="">종일</label>
+                            <label><input type="checkbox" name="time" id="" value="">심야</label>
+                            <label><input type="checkbox" name="time" id="" value="">불규칙</label>
+                        </div>
+                        <div>
+                            <label><input type="checkbox" name="day" id="" value="">평일</label>
+                            <label><input type="checkbox" name="day" id="" value="">주말</label>
+                            <label><input type="checkbox" name="day" id="" value="">주중</label>
+                            <label><input type="checkbox" name="day" id="" value="">기타시간</label>: <input type="text"
+                                name="etc-time">
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p>콘텐츠</p>
+                        <label><input type="checkbox" name="collection" id="" value="">모험의서</label>
+                        <label><input type="checkbox" name="collection" id="" value="">모코코</label>
+                        <label><input type="checkbox" name="collection" id="" value="">수집형포인트</label>
+                        <label><input type="checkbox" name="collection" id="" value="">에포나</label>
+                        <label><input type="checkbox" name="collection" id="" value="">호감도</label>
+                        <label><input type="checkbox" name="collection" id="" value="">레이드</label>
+                        <label><input type="checkbox" name="collection" id="" value="">PVP</label>
+                        <label><input type="checkbox" name="collection" id="" value="">큐브_회랑</label>
+                        <label><input type="checkbox" name="collection" id="" value="">생활</label>
+                    </div>
+                    <div class="raid">
+                        <p>군단장 레이드</p>
+                        <div class="raidbox">
+                            <div class="baltan">
+                                발탄: <label><input type="checkbox" name="raid1" id="" value="">노말</label><label><input
+                                        type="checkbox" name="raid1" id="" value="">하드</label>
+                            </div>
+                            <div class="biackiss">
+                                비아키스: <label><input type="checkbox" name="raid2" id="" value="">노말</label><label><input
+                                        type="checkbox" name="raid2" id="" value="">하드</label>
+                            </div>
+                            <div class="Kouku-Sayton">
+                                쿠쿠세이튼: <label><input type="checkbox" name="raid3" id="" value="">노말</label><label><input
+                                        type="checkbox" name="raid3" id="" value="">하드</label>
+                            </div>
+                            <div class="abrelshud">
+                                아브렐슈드: <label><input type="checkbox" name="raid4" id="" value="">노말</label><label><input
+                                        type="checkbox" name="raid4" id="" value="">하드</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="game-style">
+                        <p>플레이 스타일</p>
+                        <label><input type="checkbox" name="play" id="" value="">하드</label>
+                        <label><input type="checkbox" name="play" id="" value="">즐겜</label>
+                        <label><input type="checkbox" name="play" id="" value="">수다</label>
+                        <label><input type="checkbox" name="play" id="" value="">잠수</label>
+                        <label><input type="checkbox" name="play" id="" value="">스샷</label>
+                        <label><input type="checkbox" name="play" id="" value="">스토리</label>
+                        <label><input type="checkbox" name="play" id="" value="">숙제</label>
+                        <label><input type="checkbox" name="play" id="" value="">룩덕</label>
+                    </div>
+                    <div class="party-style">
+                        <p>파티 선호도</p>
+                        <label><input type="checkbox" name="party" id="" value="">솔플</label>
+                        <label><input type="checkbox" name="party" id="" value="">매칭</label>
+                        <label><input type="checkbox" name="party" id="" value="">공팟</label>
+                        <label><input type="checkbox" name="party" id="" value="">고정</label>
+                        <label><input type="checkbox" name="party" id="" value="">지인</label>
+                        <label><input type="checkbox" name="party" id="" value="">길드</label>
+                    </div>
+                </div>
+                <div class="twitter">
+                    <div class="tweet-style">
+                        <p>트윗성향</p>
+                        <label><input type="checkbox" name="twitter" id="" value="">아무말</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">RT</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">연성</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">마음</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">욕트</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">섹트</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">일상트</label>
+                        <label><input type="checkbox" name="twitter" id="" value="">우울트</label>
+                    </div>
+                    <div>
+                        <p>좋아요</p>
+                        <textarea name="ok" id="" cols="50" rows="2"></textarea>
+                    </div>
+                    <div>
+                        <p>싫어요</p>
+                        <textarea name="no" id="" cols="50" rows="2"></textarea>
+                    </div>
+                    <div>
+                        <p>한마디</p>
+                        <textarea name="word" id="" cols="50" rows="2"></textarea>
+                    </div>
+                </div>
+                <div class="bun">
+                    <button class="submit" type="submit">제출</button>
+                    <button type="button" class="dawnlod">이미지로 저장</button>
+                </div>
+            </form>
+            <div id="img">
+                <div class="img_box">
+                    <label for="img">이미지 선택</label>
+                    <input class="img" type="file" accept="image/jpeg, image/png, image/jpg">
+                </div>
+            </div>
+            <div class="printbox">
+                <div class="outA" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+                    <div class="outB">
+                        <P class="by"></P>
+                        <div class="outB-text">
+                            <div class="jab-img"></div>
+                            <div class="mococo-img"></div>
+                            <div class="printinfo">
+                                <div class="info1">
+                                    <div class="serverbox">
+                                        <p class="server">서버 </p>
+                                        <span class="printserver"></span>
+                                    </div>
+                                    <div class="jabbox">
+                                        <p class="jab">직업</p>
+                                        <span class="printjab"></span>
+                                    </div>
+                                </div>
+                                <div class="info2">
+                                    <div class="namebox">
+                                        <p class="name">이름</p>
+                                        <span class="printname"></span>
+                                    </div>
+                                    <label class="nikname"><input type="checkbox" name="nikname" disabled>인게임 닉네임이
+                                        달라요</label>
+                                </div>
+                                <div class="info3">
+                                    <div class="levelbox">
+                                        <p class="level">래밸</p> <span class="printlevel"></span>
+                                    </div>
+                                    <div class="guildbox">
+                                        <p class="guild">길드</p> <span class="printguild"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="printtime">
+                                <div class="time-title">
+                                    <p>접속 시간대</p>
+                                </div>
+                                <div class="time">
+                                    <label><input type="checkbox" name="daybreak" disabled>새벽</label>
+                                    <label><input type="checkbox" name="am" disabled>오전</label>
+                                    <label><input type="checkbox" name="pm" disabled>오후</label>
+                                    <label><input type="checkbox" name="alltime" disabled>종일</label>
+                                    <label><input type="checkbox" name="night" disabled>심야</label>
+                                    <label><input type="checkbox" name="irregular" disabled>불규칙</label>
+                                    <label><input type="checkbox" name="weekday" disabled>평일</label>
+                                    <label><input type="checkbox" name="Weekend" disabled>주말</label>
+                                    <label><input type="checkbox" name="allday" disabled>주중</label>
+                                    <label><input type="checkbox" name="etctime" disabled>기타시간</label>
+                                    <span class="etc-time"></span>
+                                </div>
+                            </div>
+                            <div class="printcontents">
+                                <div class="contents-title">
+                                    <p>컨텐츠</p>
+                                </div>
+                                <div class="contents">
+                                    <label><input type="checkbox" name="adventure" disabled>모험의서</label>
+                                    <label><input type="checkbox" name="mococo" disabled>모코코</label>
+                                    <label><input type="checkbox" name="point" disabled>수집형포인트</label>
+                                    <label><input type="checkbox" name="epona" disabled>에포나</label>
+                                    <label><input type="checkbox" name="like" disabled>호감도</label>
+                                    <label><input type="checkbox" name="raid" disabled>레이드</label>
+                                    <label><input type="checkbox" name="pvp" disabled>PVP</label>
+                                    <label><input type="checkbox" name="ticket" disabled>큐브/회랑</label>
+                                    <label><input type="checkbox" name="life" disabled>생활</label>
+                                </div>
+                            </div>
+                            <div class="printraid">
+                                <div class="raid-title">
+                                    <p>군단장 레이드</p>
+                                </div>
+                                <div class="raid">
+                                    <div class="title">
+                                        <span>발탄</span>
+                                        <span>비아키스</span>
+                                        <span>쿠크세이튼</span>
+                                        <span>아브렐슈드</span>
+                                    </div>
+                                    <div class="box">
+                                        <div class="baltan">
+                                            <label><input type="checkbox" name="raid1" disabled>노말</label>
+                                            <label><input type="checkbox" name="raid2" disabled>하드</label>
+                                        </div>
+                                        <div class="biackiss">
+                                            <label><input type="checkbox" name="raid1" disabled>노말</label>
+                                            <label><input type="checkbox" name="raid2" disabled>하드</label>
+                                        </div>
+                                        <div class="Kouku-Sayton">
+                                            <label><input type="checkbox" name="raid1" disabled>노말</label>
+                                            <label><input type="checkbox" name="raid2" disabled>하드</label>
+                                        </div>
+                                        <div class="abrelshud">
+                                            <label><input type="checkbox" name="raid1" disabled>노말</label>
+                                            <label><input type="checkbox" name="raid2" disabled>하드</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="printplay">
+                                <p>플레이 스타일</p>
+                                <label><input type="checkbox" name="hard" disabled>하드</label>
+                                <label><input type="checkbox" name="light" disabled>즐겜</label>
+                                <label><input type="checkbox" name="chat" disabled>수다</label>
+                                <label><input type="checkbox" name="diving" disabled>잠수</label>
+                                <label><input type="checkbox" name="screenshot" disabled>스샷</label>
+                                <label><input type="checkbox" name="story" disabled>스토리</label>
+                                <label><input type="checkbox" name="Work" disabled>숙제</label>
+                                <label><input type="checkbox" name="look" disabled>룩덕</label>
+                            </div>
+                            <div class="printparty">
+                                <p>파티 선호도</p>
+                                <label><input type="checkbox" name="solo" disabled>솔플</label>
+                                <label><input type="checkbox" name="matching" disabled>매칭</label>
+                                <label><input type="checkbox" name="free" disabled>공팟</label>
+                                <label><input type="checkbox" name="party" disabled>고정</label>
+                                <label><input type="checkbox" name="friend" disabled>지인</label>
+                                <label><input type="checkbox" name="guild" disabled>길드</label>
+                            </div>
+                            <div class="printtwitter">
+                                <p>트윗 성향</p>
+                                <label><input type="checkbox" name="say" disabled>아무말</label>
+                                <label><input type="checkbox" name="rt" disabled>RT</label>
+                                <label><input type="checkbox" name="Creation" disabled>연성</label>
+                                <label><input type="checkbox" name="like" disabled>마음</label>
+                                <label><input type="checkbox" name="fuck" disabled>욕트</label>
+                                <label><input type="checkbox" name="sex" disabled>섹트</label>
+                                <label><input type="checkbox" name="life" disabled>일상트</label>
+                                <label><input type="checkbox" name="mope" disabled>우울트</label>
+                            </div>
+                            <div class="twitter-word">
+                                <div class="okbox">
+                                    <p class="ok">좋아요</p>
+                                    <span class="printok"></span>
+                                </div>
+                                <div class="nobox">
+                                    <p class="no">싫어요</p>
+                                    <span class="printno"></span>
+                                </div>
+                                <div class="woldbox">
+                                    <p class="word">한마디</p>
+                                    <span class="printwold"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/html2canvas.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
