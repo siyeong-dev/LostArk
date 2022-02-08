@@ -238,7 +238,7 @@ input[name="guild"]{
 }
 .mococo-bg{
     position: absolute;
-    top: -23px;
+    top: 7px;
     right: 115px;
     width: 100px;
     height: 100px;
@@ -251,7 +251,7 @@ input[name="guild"]{
 }
 .mococo-img{
     position: absolute;
-    top: -2px;
+    top: 28px;
     right: 142px;
     width: 50px;
     height: 50px;
@@ -369,7 +369,7 @@ input[name="guild"]{
     margin-bottom: 10px;
 }
 .info1 .serverbox{
-    width: 100px;
+    width: 135px;
     display: flex;
     align-items: center;
 }
