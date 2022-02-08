@@ -165,21 +165,21 @@ input[name="guild"]{
 }
 .by{
     position: absolute;
-    top: 25px;
-    right: 240px;
+    bottom: 35px;
+    right: 140px;
     color: whitesmoke;
 }
-/* .by::after{
+.by::after{
     position: absolute;
-    content: "@_miaring_";
+    content: "by @_miaring_";
     color: #000;
-    background-color: #fdd28391;
+    background-color: #f8e9ce91;
     border-radius: 20px;
-    width: 95px;
-    padding-left: 5px;
+    width: 120px;
+    padding-left: 10px;
     padding-bottom: 5px;
     font-weight: bolder;
-} */
+}
 .outB .outB-text{
     position: absolute;
     top: 15px;
