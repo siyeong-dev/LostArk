@@ -1,0 +1,480 @@
+@charset "UTF-8";
+
+
+body{
+    background-color: #15202B;
+    color:lightgray;
+}
+select,button{
+    color: black;
+}
+
+.iner {
+    margin: 0 auto;
+    width: 1240px;
+    height: 100%;
+    background-color: #333333;
+}
+
+#title{
+    width: 100%;
+    height: 200px;
+    padding-top: 30px;
+}
+.logo{
+    width: 300px;
+    height: 100px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+}
+#title .title{
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 1em;
+    color: #dab97e;
+    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -3px 20px rgba(255,255,255,0.4);
+}
+#img{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+}
+.img_box{
+    width: 440px;
+    padding: 10px;
+    margin-left: 20px;
+    padding-left: 35px; 
+    border: none;
+    border-radius: 30px;   
+    background-color: #5c5c5c;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font-size: larger;
+    padding-left: 20px;
+}
+form input{
+    color: #000;
+}
+form textarea{
+    color: #000;
+}
+.info{
+    margin-bottom: 10px;
+}
+.info p{
+    color: #F7DAA3;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.info .name{
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.info .name label:first-child{
+    margin-right: 10px;
+}
+.ingame{
+    margin-bottom: 30px;
+}
+.ingame p, .twitter P{
+    color: #F7DAA3;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ingame .raidbox{
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+.twitter{
+    margin-bottom: 30px;
+}
+.info-title{
+
+}
+
+input[name="guild"]{
+    
+}
+.bun{
+    height: 110px;
+}
+.submit{
+    width: 100px;
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: none;
+    margin-right: 20px;
+}
+
+.dawnlod{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 45px;
+    border: none;
+
+}
+.printbox{
+    position: relative;
+    width: 1160px;
+    height: 660px;
+    border: none;    
+
+}
+.outA{
+    position: absolute;
+    top: -30px;
+    left: -80px;
+    transform: scale(0.85);
+    /* position: relative; */
+    width: 1280px;
+    height: 720px;
+    background-color: #f5f5f5;
+    border-radius: 20px;
+    cursor: Default;
+    border: none;
+}
+.outA img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    /* border-radius: 20px; */
+    overflow: hidden;
+}
+.outB{
+    position: absolute;
+    background-image: url(../img/bg.png);
+    background-position: -60px -140px ;
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 800px;
+    border: none;
+    
+}
+.by{
+    position: absolute;
+    top: 25px;
+    right: 240px;
+    color: whitesmoke;
+}
+/* .by::after{
+    position: absolute;
+    content: "@_miaring_";
+    color: #000;
+    background-color: #fdd28391;
+    border-radius: 20px;
+    width: 95px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-weight: bolder;
+} */
+.outB .outB-text{
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    width: 450px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 10px;
+    justify-content: space-around;
+    color: whitesmoke;
+    border: none;
+}
+.outB-text p{
+    color: #F7DAA3;
+    font-weight: bolder;
+    font-size: 18px;
+}
+.outB-text span{
+    margin-left: 10px;
+}
+.outB-text input[type="checkbox"] {
+    -webkit-appearance: none;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    outline: none !important;
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    background: #fbfbfb;
+    margin-right: 1px;
+    margin-left: 5px;
+}
+
+.outB-text input[type="checkbox"]::before {
+    content: "\2713";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: scale(0) translate(-50%, -50%);
+    line-height: 1;
+}
+
+.outB-text input[type="checkbox"]:checked {
+    background-color: #ff8955;
+    border-color: rgba(255, 255, 255, 0.3);
+    color: white;
+}
+.outB-text input[type="checkbox"]:checked::before {
+    border-radius: 2px;
+    transform: scale(1) translate(-50%, -50%)
+}
+.printinfo {
+}
+.mococo-img{
+    position: absolute;
+    top: -2px;
+    right: 142px;
+    width: 50px;
+    height: 50px;
+    background-size: auto;
+    background-position: center center;
+    /* background-color: #fffffeaf; */
+    border-radius: 20px;
+    border: none;
+}
+.mococo{
+    background-image: url(../img/mococo.png);
+    background-repeat: no-repeat;
+}
+.jab-img{
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 120px;
+    height: 100px;
+    background-size: auto;
+    background-position: center center;
+    border-radius: 20px;
+    border: none;
+}
+.Warlord{
+    background-image: url(../img/Warlord.png);
+    background-repeat: no-repeat;
+}
+.Berserker{
+    background-image: url(../img/Berserker.png);
+    background-repeat: no-repeat;
+}
+.Destroyer{
+    background-image: url(../img/Destroyer.png);
+    background-repeat: no-repeat;
+}
+.Holyknight{
+    background-image: url(../img/Holyknight.png);
+    background-repeat: no-repeat;
+}
+.Battle{
+    background-image: url(../img/Battle.png);
+    background-repeat: no-repeat;
+}
+.Infighter{
+    background-image: url(../img/Infighter.png);
+    background-repeat: no-repeat;
+}
+.Soul{
+    background-image: url(../img/Soul.png);
+    background-repeat: no-repeat;
+}
+.Lance{
+    background-image: url(../img/Lance.png);
+    background-repeat: no-repeat;
+}
+.Striker{
+    background-image: url(../img/Striker.png);
+    background-repeat: no-repeat;
+}
+.Bard{
+    background-image: url(../img/Bard.png);
+    background-repeat: no-repeat;
+}
+.Arcana{
+    background-image: url(../img/Arcana.png);
+    background-repeat: no-repeat;
+}
+.Summoner{
+    background-image: url(../img/Summoner.png);
+    background-repeat: no-repeat;
+}
+.Sorceress{
+    background-image: url(../img/Sorceress.png);
+    background-repeat: no-repeat;
+}
+.DevilHunter{
+    background-image: url(../img/DevilHunter.png);
+    background-repeat: no-repeat;
+}
+.Blaster{
+    background-image: url(../img/Blaster.png);
+    background-repeat: no-repeat;
+}
+.Hawk{
+    background-image: url(../img/Hawk.png);
+    background-repeat: no-repeat;
+}
+.Scouter{
+    background-image: url(../img/Scouter.png);
+    background-repeat: no-repeat;
+}
+.Gunslinger{
+    background-image: url(../img/Gunslinger.png);
+    background-repeat: no-repeat;
+}
+.Reaper{
+    background-image: url(../img/Reaper.png);
+    background-repeat: no-repeat;
+}
+.Demonic{
+    background-image: url(../img/Demonic.png);
+    background-repeat: no-repeat;
+}
+.Blade{
+    background-image: url(../img/Blade.png);
+    background-repeat: no-repeat;
+}
+.Painter{
+    background-image: url(../img/Painter.png);
+    background-repeat: no-repeat;
+}
+.printinfo .info1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info1 .serverbox{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.info1 .jabbox{
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+.printinfo .info2{
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.info2 .namebox{
+    display: flex;
+    align-items: center;
+}
+.info2 .nikname{
+    margin-top: 5px;
+}
+.info2 input[name="nikname"]{
+    margin-left: 0;
+}
+.printinfo .info3{
+    display: flex;
+    margin-bottom: 10px;
+}
+.printinfo .info3 .levelbox{
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+.printinfo .info3 .guildbox{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+.printtime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.printtime .time-title{
+    width: 100px;
+}
+.printtime .time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 330px;
+    padding-right: 30px;
+}
+.printcontents{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.printcontents .contents-title{
+    width: 100px;
+}
+.printcontents .contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 340px;
+    padding-right: 20px;
+}
+.printraid{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.printraid .raid-title{
+    width: 200px;
+}
+.printraid .raid{
+    width: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.printraid .raid .title{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+}
+.printraid .raid .box{
+    width: 200px;
+}
+.twitter-word{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.twitter-word div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.printplay p, .printparty p, .printtwitter p{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.printplay input[type="checkbox"]:first-child, .printparty input[type="checkbox"]:first-child, .printtwitter input[type="checkbox"]:first-child {
+    margin-left: 0;
+}
+.printcontents input[name="adventure"]{
+    margin-left: 0;
+}
+.printcontents input[name="like"]{
+    margin-left: 0;
+}
+.printtime input[name="daybreak"]{
+    margin-left: 0;
+} 
+.printtime input[name="weekday"]{
+    margin-left: 0;
+} 
+
