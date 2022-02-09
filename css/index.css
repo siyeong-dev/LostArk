@@ -7,6 +7,7 @@ body{
 }
 select,button{
     color: black;
+    cursor: pointer;
 }
 
 .iner {
