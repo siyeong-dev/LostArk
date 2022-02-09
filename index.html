@@ -17,7 +17,7 @@
                 <div class="logo"></div>
                 <p class="title">로스트아크 시트 생성기</p>
             </div>
-            <form>
+            <form method="POST">
                 <div class="info">
                     <p>기본 정보</p>
                     <div>
@@ -182,10 +182,13 @@
                     <button type="button" class="dawnlod">이미지로 저장</button>
                 </div>
             </form>
-            <div id="img">
+            <div id="printbox">
                 <div class="img_box">
                     <label for="img">이미지 선택</label>
                     <input class="img" type="file" accept="image/jpeg, image/png, image/jpg">
+                </div>
+                <div class="color">
+                    <label>글자색: <input type="text" name="color"></label>
                 </div>
             </div>
             <div class="printbox">

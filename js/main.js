@@ -132,6 +132,16 @@ form.addEventListener("submit", function (event) {
 
 });
 
+const color = document.querySelector("#printbox .color input");
+color.addEventListener("change", function (event) {
+    let input = event.target.value;
+    const colors = document.querySelectorAll(".outB-text span:not(.printraid .title span)");
+    for (let i = 0; i < colors.length; i++) {
+        const option = colors[i];
+        option.style.color = input;
+    }
+})
+
 function printtext(username, userjab, userserver, etc_time, userlevel, userguild, userok, userno, userword) {
     const printname = document.querySelector(".printname");
     const printjab = document.querySelector(".printjab");
