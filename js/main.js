@@ -484,6 +484,7 @@ dawnlod.addEventListener("click", function (event) {
     html2canvas(document.querySelector(".outA"), {
         scale: 2,
         allowTaint: true,
+        taintTest: false,
     }).then(canvas => {
         saveAs(canvas.toDataURL(), makeid(5) + '.png');
     });
