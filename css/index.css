@@ -193,7 +193,7 @@ input[name="guild"]{
 }
 .by::after{
     position: absolute;
-    content: "avring.tk by @_miaring_";
+    content: "avring.tk by @avringtk";
     color: #000;
     background-color: #f8e9ce91;
     border-radius: 20px;
