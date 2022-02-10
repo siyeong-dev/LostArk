@@ -6,9 +6,21 @@ body{
     color:lightgray;
 }
 select,button{
-    color: black;
+    background-color: #5c5c5c;
+    color: #eee;
     cursor: pointer;
 }
+input[type=text],textarea {
+    color: #eee;
+    caret-color:    #eee;
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid #dab97e;
+    padding-left: 10px;
+}
+input[type=text]:focus,textarea:focus{
+    outline: none
+} 
 
 .iner {
     margin: 0 auto;
@@ -97,6 +109,7 @@ form textarea{
 .info .name{
     display: flex;
     justify-content: center;
+    margin-top: 10px;
     margin-left: 40px;
     margin-bottom: 20px;
 }
@@ -159,10 +172,10 @@ input[name="guild"]{
     top: -30px;
     left: -80px;
     transform: scale(0.85);
-    /* position: relative; */
     width: 1280px;
     height: 720px;
-    background-color: #f5f5f5;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
     border-radius: 20px;
     cursor: Default;
     border: none;
@@ -172,12 +185,10 @@ input[name="guild"]{
     height: 100%;
     object-fit: contain;
     object-position: center center;
-    /* border-radius: 20px; */
-    overflow: hidden;
 }
 .outB{
     position: absolute;
-    background-image: url(../img/bg.png);
+    background-image: url(../img/bg1.png);
     background-position: -60px -140px ;
     background-repeat: no-repeat;
     width: 600px;
@@ -186,21 +197,13 @@ input[name="guild"]{
     
 }
 .by{
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 35px;
-    right: 215px;
-    color: whitesmoke;
-}
-.by::after{
-    position: absolute;
-    content: "avring.tk by @avringtk";
-    color: #000;
-    background-color: #f8e9ce91;
-    border-radius: 20px;
-    width: 195px;
-    padding-left: 15px;
-    padding-bottom: 5px;
-    font-weight: bolder;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/bg3.png);
+    background-repeat: no-repeat;
 }
 .outB .outB-text{
     position: absolute;
@@ -233,37 +236,19 @@ input[name="guild"]{
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
 }
 .outB-text input[type="checkbox"] {
-    -webkit-appearance: none;
-    position: relative;
-    width: 10px;
-    height: 10px;
-    outline: none !important;
-    border: 1px solid #eeeeee;
-    border-radius: 2px;
-    background: #fbfbfb;
-    margin-right: 1px;
-    margin-left: 5px;
+    display: none;
+}
+.outB-text input[type="checkbox"] + label {
+    display: inline-block; 
+    padding-left: 12px;
+    background-image: url(../img/checkbox_off.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+.outB-text input[type="checkbox"]:checked + label {
+    background-image: url(../img/checkbox_on.png);
 }
 
-.outB-text input[type="checkbox"]::before {
-    content: "\2713";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    overflow: hidden;
-    transform: scale(0) translate(-50%, -50%);
-    line-height: 1;
-}
-
-.outB-text input[type="checkbox"]:checked {
-    background-color: #ff8955;
-    border-color: rgba(255, 255, 255, 0.3);
-    color: white;
-}
-.outB-text input[type="checkbox"]:checked::before {
-    border-radius: 2px;
-    transform: scale(1) translate(-50%, -50%)
-}
 .printinfo {
 }
 .mococo-bg{
@@ -417,12 +402,7 @@ input[name="guild"]{
 .info2 .namebox{
     display: flex;
     align-items: center;
-}
-.info2 .nikname{
-    margin-top: 5px;
-}
-.info2 input[name="nikname"]{
-    margin-left: 0;
+    margin-bottom: 5px;
 }
 .printinfo .info3{
     display: flex;
@@ -446,12 +426,16 @@ input[name="guild"]{
 .printtime .time-title{
     width: 100px;
 }
+.printtime .time label,.printcontents .contents label{
+    margin-right: 5px;
+}
 .printtime .time{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 330px;
-    padding-right: 30px;
+    align-items: center;
+    width: 340px;
+    padding-left: 20px;
+    padding-right: 10px;
 }
 .printcontents{
     display: flex;
@@ -464,8 +448,8 @@ input[name="guild"]{
 .printcontents .contents{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 340px;
+    align-items: center;
+    width: 360px;
     padding-right: 20px;
 }
 .printraid{
@@ -508,19 +492,5 @@ input[name="guild"]{
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.printplay input[type="checkbox"]:first-child, .printparty input[type="checkbox"]:first-child, .printtwitter input[type="checkbox"]:first-child {
-    margin-left: 0;
-}
-.printcontents input[name="adventure"]{
-    margin-left: 0;
-}
-.printcontents input[name="like"]{
-    margin-left: 0;
-}
-.printtime input[name="daybreak"]{
-    margin-left: 0;
-} 
-.printtime input[name="weekday"]{
-    margin-left: 0;
-} 
+
 
