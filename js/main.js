@@ -482,7 +482,7 @@ dawnlod.addEventListener("click", function (event) {
         document.body.removeChild(link);
     }
     html2canvas(document.querySelector(".outA"), {
-        scale: 2,
+        scale: 1,
         allowTaint: true,
         taintTest: false,
         backgroundColor: 'rgba(0, 0, 0, 0)',
