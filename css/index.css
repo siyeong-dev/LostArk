@@ -185,6 +185,8 @@ input[name="guild"]{
     height: 100%;
     object-fit: contain;
     object-position: center center;
+    border: none;
+    border-radius: 20px;
 }
 .outB{
     position: absolute;

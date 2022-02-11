@@ -485,6 +485,7 @@ dawnlod.addEventListener("click", function (event) {
         scale: 2,
         allowTaint: true,
         taintTest: false,
+        backgroundColor: 'rgba(0, 0, 0, 0)',
     }).then(canvas => {
         saveAs(canvas.toDataURL(), makeid(5) + '.png');
     });
