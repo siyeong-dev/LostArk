@@ -12,7 +12,6 @@ select,button{
 }
 input[type=text],textarea {
     color: #eee;
-    caret-color:    #eee;
     background-color: transparent;
     border: none;
     border-bottom: 3px solid #dab97e;
@@ -84,19 +83,28 @@ input[type=text]:focus,textarea:focus{
 .color input{
     color: #000;
     width: 60px;
-    line-height: 0;
+    line-height: 1em;
 }
+
+.mod{
+    width: 200px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 30px;   
+    /* background-color: #5c5c5c; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mod select{
+    margin-left: 5px;
+}
+
 form{
     display: flex;
     flex-direction: column;
     font-size: larger;
     padding-left: 20px;
-}
-form input{
-    color: #000;
-}
-form textarea{
-    color: #000;
 }
 .info{
     margin-bottom: 10px;
