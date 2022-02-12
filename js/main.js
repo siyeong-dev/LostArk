@@ -36,16 +36,41 @@ form.addEventListener("submit", function (event) {
     let userok = ok.value;
     let userno = no.value;
     let userword = word.value;
-    sessionStorage.setItem("username", username);
-    sessionStorage.setItem("userjab", userjab);
-    sessionStorage.setItem("userserver", userserver);
-    sessionStorage.setItem("userlevel", userlevel);
-    sessionStorage.setItem("userguild", userguild);
-    sessionStorage.setItem("ect_time", etc_time);
-    sessionStorage.setItem("userok", userok);
-    sessionStorage.setItem("userno", userno);
-    sessionStorage.setItem("userword", userword);
 
+    
+    if (!!username) {
+        sessionStorage.setItem("username", id.value);
+    }
+    if (!!userjab) {
+        sessionStorage.setItem("userjab", jab.value);
+    }
+    if (!!userlevel) {
+        sessionStorage.setItem("userlevel", level.value);
+    }
+    if (!!userguild) {
+        sessionStorage.setItem("userguild", guild.value);
+    }
+    if (!!userserver) {
+        sessionStorage.setItem("userserver", server.value);
+    }
+    if (!!etc_time) {
+        sessionStorage.setItem("etc_time", etc.value);
+    }
+    if (!!userok) {
+        sessionStorage.setItem("userok", ok.value);
+    }
+    if (!!userno) {
+        sessionStorage.setItem("userno", no.value);
+    }
+    if (!!userword) {
+        sessionStorage.setItem("userword", word.value);
+    }
+    if (!!Newuser.checked === true) {
+        sessionStorage.setItem("newuser", "new");
+    }
+    if (!!Nikname.checked === true) {
+        sessionStorage.setItem("nikname", "nikname");
+    }
     if (Newuser.checked === true) {
         sessionStorage.setItem("newuser", "new");
     }
@@ -125,7 +150,7 @@ form.addEventListener("submit", function (event) {
     }
 
 
-    printtext(username, userjab, userserver, etc_time, userlevel, userguild, userok, userno, userword);
+    printtext();
     printjab();
     printcheckbox();
 
@@ -142,7 +167,7 @@ color.addEventListener("change", function (event) {
     }
 })
 
-function printtext(username, userjab, userserver, etc_time, userlevel, userguild, userok, userno, userword) {
+function printtext() {
     const printname = document.querySelector(".printname");
     const printjab = document.querySelector(".printjab");
     const printserver = document.querySelector(".printserver");
@@ -152,15 +177,17 @@ function printtext(username, userjab, userserver, etc_time, userlevel, userguild
     const printno = document.querySelector(".printno");
     const printwold = document.querySelector(".printwold");
     const printetc_time = document.querySelector(".etc-time");
-    printname.innerText = `${username}`;
-    printjab.innerText = `${userjab}`;
-    printserver.innerText = `${userserver}`;
-    printlevel.innerText = `${userlevel}`;
-    printguild.innerText = `${userguild}`;
-    printok.innerText = `${userok}`;
-    printno.innerText = `${userno}`;
-    printwold.innerText = `${userword}`;
-    printetc_time.innerText = `${etc_time}`;
+
+    printserver.innerText = sessionStorage.getItem("userserver");
+    printname.innerText = sessionStorage.getItem("username");
+    printjab.innerText = sessionStorage.getItem("userjab");
+    printlevel.innerText = sessionStorage.getItem("userlevel");
+    printguild.innerText = sessionStorage.getItem("userguild");
+    printok.innerText = sessionStorage.getItem("userok");
+    printno.innerText = sessionStorage.getItem("userno");
+    printwold.innerText = sessionStorage.getItem("userword");
+    printetc_time.innerText = sessionStorage.getItem("etc-time");
+
 }
 
 function printjab() {
