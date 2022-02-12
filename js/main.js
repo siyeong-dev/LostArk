@@ -19,10 +19,10 @@ const collection = document.querySelectorAll("input[name=collection]");
 const play = document.querySelectorAll("input[name=play]");
 const party = document.querySelectorAll("input[name=party]");
 const twitter = document.querySelectorAll("input[name=twitter]");
-const raid1 = document.querySelectorAll("input[name=raid1]");
-const raid2 = document.querySelectorAll("input[name=raid2]");
-const raid3 = document.querySelectorAll("input[name=raid3]");
-const raid4 = document.querySelectorAll("input[name=raid4]");
+const baltan = document.querySelectorAll(".raidbox .baltan input");
+const biackiss = document.querySelectorAll(".raidbox .biackiss input");
+const Kouku_Sayton = document.querySelectorAll(".raidbox .Kouku-Sayton input");
+const abrelshud = document.querySelectorAll(".raidbox .abrelshud input");
 
 
 form.addEventListener("submit", function (event) {
@@ -120,29 +120,29 @@ form.addEventListener("submit", function (event) {
             sessionStorage.setItem(twitterlabel, "day");
         }
     }
-    for (let ra = 0; ra < raid1.length; ra++) {
-        let raid1box = raid1[ra];
+    for (let ra = 0; ra < baltan.length; ra++) {
+        let raid1box = baltan[ra];
         let raid1label = raid1box.parentNode.innerText;
         if (raid1box.checked === true) {
             sessionStorage.setItem("발탄" + raid1label, "발탄");
         }
     }
-    for (let rb = 0; rb < raid2.length; rb++) {
-        let raid2box = raid2[rb];
+    for (let rb = 0; rb < biackiss.length; rb++) {
+        let raid2box = biackiss[rb];
         let raid2label = raid2box.parentNode.innerText;
         if (raid2box.checked === true) {
             sessionStorage.setItem("비아키스" + raid2label, "비아키스");
         }
     }
-    for (let rc = 0; rc < raid3.length; rc++) {
-        let raid3box = raid3[rc];
+    for (let rc = 0; rc < Kouku_Sayton.length; rc++) {
+        let raid3box = Kouku_Sayton[rc];
         let raid3label = raid3box.parentNode.innerText;
         if (raid3box.checked === true) {
-            sessionStorage.setItem("쿠쿠세이튼" + raid3label, "투투세이튼");
+            sessionStorage.setItem("쿠쿠세이튼" + raid3label, "쿠쿠세이튼");
         }
     }
-    for (let rd = 0; rd < raid4.length; rd++) {
-        let raid4box = raid4[rd];
+    for (let rd = 0; rd < abrelshud.length; rd++) {
+        let raid4box = abrelshud[rd];
         let raid4label = raid4box.parentNode.innerText;
         if (raid4box.checked === true) {
             sessionStorage.setItem("아브렐슈드" + raid4label, "아브렐슈드");
