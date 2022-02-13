@@ -481,6 +481,10 @@ input[name="guild"]{
     flex-direction: column;
     width: 100px;
 }
+.printraid .raid .title1{
+    display: flex;
+    flex-direction: column;
+}
 .printraid .raid .box{
     width: 200px;
 }
