@@ -235,9 +235,6 @@ input[name="guild"]{
     font-size: 18px;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
 }
-.outB-text label{
-    text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
-}
 
 .outB-text span{
     margin-left: 10px;
@@ -254,6 +251,7 @@ input[name="guild"]{
     background-image: url(../img/checkbox_off.png);
     background-position: left center;
     background-repeat: no-repeat;
+    text-shadow: 6px 4px 4px rgba(0,0,0,0.4);
 }
 .outB-text input[type="checkbox"]:checked + label {
     background-image: url(../img/checkbox_on.png);
