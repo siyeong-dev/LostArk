@@ -219,6 +219,9 @@ input[name="guild"]{
     font-size: 25px;
     line-height: 1em;
 }
+.printraid .title span{
+    text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+}
 .outB-text label{
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
 }
