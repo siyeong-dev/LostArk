@@ -199,8 +199,8 @@ input[name="guild"]{
 }
 .outA img {
     position: absolute;
-    top: 48px;
-    left: 182px;
+    top: 43px;
+    left: 120px;
     width: 300px;
     height: 300px;
     object-fit: contain;
@@ -212,15 +212,18 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
-    font-size: 27px;
+    font-size: 30px;
     line-height: 1em;
+    font-family: "NeoDunggeunmo";
 }
 .outB-text span{
-    font-size: 25px;
+    font-size: 22px;
     line-height: 1em;
+    font-family: 'Cafe24Syongsyong';
 }
 .printraid .title span{
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: 'NeoDunggeunmo';
 }
 .outB-text label{
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
@@ -237,13 +240,14 @@ input[name="guild"]{
     font-size: 22px;
     line-height: 1em;
     margin-left: 5px;
+    font-family: 'Cafe24Dongdong';
 }
 .outB-text input[type="checkbox"]:checked + label {
     background-image: url(../img/checkbox_on.png);
 }
 .mococo-bg{
     position: absolute;
-    top: 560px;
+    top: 567px;
     right: 540px;
     width: 100px;
     height: 100px;
@@ -256,7 +260,7 @@ input[name="guild"]{
 }
 .mococo-img{
     position: absolute;
-    top: 581px;
+    top: 588px;
     right: 567px;
     width: 50px;
     height: 50px;
@@ -425,8 +429,8 @@ input[name="guild"]{
     position: absolute;
     width: 280px;
     text-align: initial;
-    top: 330px;
-    left: 5%;
+    top: 335px;
+    left: 5px;
     font-size: 20px !important;
 }
 .printtwitter{
@@ -435,6 +439,7 @@ input[name="guild"]{
     bottom: 180px;
     margin-left: 10px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
@@ -444,27 +449,27 @@ input[name="guild"]{
 }
 .printtwitter div{
     display: flex;
-    width: 350px;
+    width: 500px;
     height: 100px;
     align-items: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
 }
 .twitter-word{
     position: absolute;
-    bottom: 10px;
-    margin-left: 10px;
+    bottom: 0px;
+    left: 20px;
 }
 .twitter-word div{
     width: 497px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .twitter-word p{
     width: 150px;
-    text-align: center;
+    /* text-align: center; */
 }
 .twitter-word span{
     text-align: right;
@@ -596,6 +601,8 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
+    padding-left: 10px;
 }
 .nametext{
 }
@@ -604,6 +611,8 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
+    padding-right: 20px;
 }
 .jabtext{
 }
@@ -612,6 +621,7 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
 }
 .leveltext{
 }
@@ -620,6 +630,7 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
 }
 .guildtext{
 }
@@ -628,4 +639,6 @@ input[name="guild"]{
     color: #F7DAA3;
     font-weight: bolder;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
+    padding-left: 10px;
 }
