@@ -478,14 +478,12 @@ input[name="guild"]{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    /* align-items: center; */
 }
 .printraid .raid .title{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100px;
-    /* height: 85px; */
 }
 .printraid .raid .title1{
     display: flex;
