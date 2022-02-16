@@ -477,16 +477,25 @@ input[name="guild"]{
     width: 500px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between
+    justify-content: space-between;
+    /* align-items: center; */
 }
 .printraid .raid .title{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100px;
+    /* height: 85px; */
 }
 .printraid .raid .title1{
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
+}
+.printraid .raid .title2{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2px;
 }
 .printraid .raid .box{
     width: 200px;
