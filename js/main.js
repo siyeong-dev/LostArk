@@ -222,7 +222,7 @@ function printtext() {
     printok.innerText = sessionStorage.getItem("userok");
     printno.innerText = sessionStorage.getItem("userno");
     printwold.innerText = sessionStorage.getItem("userword");
-    printetc_time.innerText = sessionStorage.getItem("etc-time");
+    printetc_time.innerText = sessionStorage.getItem("etc_time");
 
 }
 
