@@ -105,6 +105,7 @@ form{
     flex-direction: column;
     font-size: larger;
     padding-left: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .info{
     margin-bottom: 10px;
@@ -228,6 +229,7 @@ input[name="guild"]{
     justify-content: space-around;
     color: whitesmoke;
     border: none;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .outB-text p{
     color: #F7DAA3;

@@ -105,6 +105,7 @@ form{
     flex-direction: column;
     font-size: larger;
     padding-left: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 .info{
     margin-bottom: 10px;
