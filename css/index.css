@@ -236,10 +236,12 @@ input[name="guild"]{
     font-weight: bolder;
     font-size: 18px;
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
+    font-family: "NeoDunggeunmo";
 }
 
 .outB-text span{
     margin-left: 10px;
+    font-family: 'Cafe24Syongsyong';
 }
 .printraid .title span{
     text-shadow: 4px 4px 4px rgba(0,0,0,0.4);
@@ -254,6 +256,7 @@ input[name="guild"]{
     background-position: left center;
     background-repeat: no-repeat;
     text-shadow: 6px 4px 4px rgba(0,0,0,0.4);
+    font-family: 'Cafe24Dongdong';
 }
 .outB-text input[type="checkbox"]:checked + label {
     background-image: url(../img/checkbox_on.png);
